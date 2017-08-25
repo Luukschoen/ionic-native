@@ -64,7 +64,9 @@ export interface BarcodeScanResult {
 /**
  * @name Barcode Scanner
  * @description
- * The Barcode Scanner Plugin opens a camera view and automatically scans a barcode, returning the data back to you.
+ * The Barcode Scanner Plugin opens a camera view and automatically scans a barcode, returning the data back to you. 
+ * Note: since iOS 10 it's mandatory to add a NSCameraUsageDescription in the info.plist, so make sure you add a camera usage description when adding the plugin for usage on iOS.
+ * Example: ionic cordova plugin add phonegap-plugin-barcodescanner --variable CAMERA_USAGE_DESCRIPTION="my description here"
  *
  * Requires Cordova plugin: `phonegap-plugin-barcodescanner`. For more info, please see the [BarcodeScanner plugin docs](https://github.com/phonegap/phonegap-plugin-barcodescanner).
  *
